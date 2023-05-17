@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TailwindCSS code */
+@layer components {
+  /* TailwindCSS code */
+  .div {
+    @apply h-full flex justify-center items-center;
+  }
+  .square {
+    @apply w-32 h-32  justify-center rounded-md bg-green-500 transition-transform ease-in-out p-2;
+  }
+
+  .square.td-instant {
+    @apply duration-0;
+  }
+
+  .square.td-speedy {
+    @apply duration-200;
+  }
+
+  .square.td-middling {
+    @apply duration-500;
+  }
+
+  .square.td-glacial {
+    @apply duration-700;
+  }
+
+  .square:hover,
+  .square:focus {
+    @apply scale-75;
+  }
+
+  .wrapper {
+    @apply grid grid-cols-2 gap-8;
+  }
+
+  .wrapper .square:nth-child(odd) {
+    @apply justify-self-end;
+  }
+
+  .wrapper .square:nth-child(even) {
+    @apply justify-self-start;
+  }
+
+  .square .duration {
+    @apply font-mono;
+  }
+
+  /* Decorative styles */
+  body {
+    @apply flex justify-center items-center;
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
