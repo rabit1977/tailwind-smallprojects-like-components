@@ -4,16 +4,16 @@ export default function TransitionDuration() {
   return (
     <div className='div'>
       <div class='wrapper'>
-        <div class='square td-instant' tabindex='0'>
+        <div class='square td-instant'>
           instant<p class='duration'>0ms</p>
         </div>
-        <div class='square td-speedy' tabindex='0'>
+        <div class='square td-speedy'>
           speedy<p class='duration'>200ms</p>
         </div>
-        <div class='square td-middling' tabindex='0'>
+        <div class='square td-middling'>
           middling<p class='duration'>500ms</p>
         </div>
-        <div class='square td-glacial' tabindex='0'>
+        <div class='square td-glacial'>
           glacial<p class='duration'>700ms</p>
         </div>
       </div>
