@@ -53,6 +53,8 @@
   body {
     @apply flex justify-center items-center;
   }
+  
+
 }
 :root {
   --foreground-rgb: 0, 0, 0;
